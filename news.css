@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-section{
+    width: 100%;
+}
+
+.blog-section .section-content{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.blog-section .section-content .title{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .section-content .title h2{
+  font-size: 80px;
+  color: cyan;
+  text-transform: uppercase;
+}
+
+.blog-section .section-content .title p{
+  font-size: 18px;
+  color: #fbfbfb;
+  margin-top: 20px;
+}
+
+.blog-section .section-content .cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+
+.blog-section .section-content .cards .card{
+  width: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.blog-section .section-content .cards .card img{
+  width: 100%;
+  height: auto;
+}
+
+.blog-section .section-content .cards .card .article{
+  padding: 15px 20px;
+}
+
+.blog-section .section-content .cards .card .article h4{
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.blog-section .section-content .cards .card .article p{
+  font-size: 16px;
+  margin: 10px 0px;
+  color: #6a6a6a;
+}
+
+.blog-section .section-content .cards .card a{
+  text-decoration: none;
+  display: inline-block;
+  background-color: #25c5c5;
+  padding: 8px 15px;
+  margin-left: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .posted-date p{
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #25c5c5;
+  padding: 6px 15px;
+}
+
+@media screen and (max-width: 992px){
+  .blog-section .section-content .cards{
+    
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .blog-section .section-content .cards{
+    
+    grid-template-columns: 1fr;
+    
+  }
+
+}
+  
+
+
+body{
+    font-family: "Montserrat";
+    background-image: url(pathaan-poster-release-srk-returns-with-a-bang-in-new-film-check-here.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    padding: 20px 50px 0 50px;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.652);
+    background-image:
+            linear-gradient(45deg,
+              rgb(11, 7, 7),
+              rgba(6, 21, 36, 0.396));
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.banner{
+    margin-top: 100px;
+    width: 65%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7eced ;
+  }
+
+  #menu {
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #f5f3f3;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .nav ul {
+    padding: 0 22px;
+  }
+
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .nav li a:hover {
+    font-weight: bold;
+  }
+
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-20%);
+  }
+
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  

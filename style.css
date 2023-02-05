@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+    background-image: url(pathaan-poster-release-srk-returns-with-a-bang-in-new-film-check-here.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    padding: 20px 50px 0 50px;
+}
+
+ul,li{
+    list-style-type: none;
+    padding: 0;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.695);
+    background-image:
+            linear-gradient(45deg,
+              rgba(11, 7, 7, 0.048),
+              rgba(6, 21, 36, 0.396));
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.banner{
+    margin-top: 100px;
+    width: 65%;
+}
+
+h1{
+    font-size: 140px;
+    font-family: "Bebas Neue";
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.title{
+    position: relative ;
+    margin-top: 30%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 160px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: transparent;
+    background-image: linear-gradient(rgb(16, 161, 190), rgb(155, 6, 6));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+
+}
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+}
+p {
+    display: block;
+    margin-top: -4em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .play {
+    position: relative;
+    direction: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+  }
+
+  .play img{
+    margin-right: 20px;
+    max-width: 50px;
+  }
+
+  .sci{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sci li{
+    list-style: none;
+  }
+
+  .sci li a{
+    text-decoration: none;
+  }
+
+  .sci li a img{
+    filter: invert(1);
+    transform: scale(0.6);
+  }
+
+  .slide{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 250px /2);
+    width: 350px;
+    height: 200px;
+    background: url(Pathaan-01.jpg);
+    background-size: cover;
+    cursor: pointer;
+    animation: animate 15s linear infinite;
+  }
+  @keyframes animate
+  {
+    0%,100%
+    {
+      background-position: top;
+    }
+    45%,55%
+    {
+      background-position: bottom;
+    }
+  }
+
+  .trailer
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .trailer.active
+  {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .trailer video
+  {
+    max-width: 900px;
+    outline: none;
+  }
+
+  .trailer .close
+  {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7eced ;
+  }
+
+  #menu {
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #f5f3f3;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .nav ul {
+    padding: 0 22px;
+  }
+
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .nav li a:hover {
+    font-weight: bold;
+  }
+
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-20%);
+  }
